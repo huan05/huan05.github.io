@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>SELECT | Hexo</title>
+  <title>SELETE | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="查询所有人的所有信息SELECT id,stuno,name,nation from stuinfo;SELECT * from stuinfo;查询年龄大于1000的同学姓名和年龄；SELECT name 姓名,age 年龄,nation 民族 from stuinfo where age &amp;gt; 1000;查询年龄大于1000的同学姓名，并且把重复信息合并SELECT DISTINCT na">
+  <meta name="description" content="所有同学的年龄总和SELECT SUM(age) from s_stu;所有男生的平均年龄SELECT AVG(age) from s_stu where sex = ‘男’;所有女生中年龄最小的多大SELECT MIN(age) from s_stu where sex = ‘女’;所有女生中年龄最大的多大SELECT max(age) from s_stu WHERE sex = ‘女’男生的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SELECT">
-<meta property="og:url" content="http://yoursite.com/2019/10/16/SELECT/index.html">
+<meta property="og:title" content="SELETE">
+<meta property="og:url" content="http://yoursite.com/2019/10/19/SELETE/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="查询所有人的所有信息SELECT id,stuno,name,nation from stuinfo;SELECT * from stuinfo;查询年龄大于1000的同学姓名和年龄；SELECT name 姓名,age 年龄,nation 民族 from stuinfo where age &amp;gt; 1000;查询年龄大于1000的同学姓名，并且把重复信息合并SELECT DISTINCT na">
+<meta property="og:description" content="所有同学的年龄总和SELECT SUM(age) from s_stu;所有男生的平均年龄SELECT AVG(age) from s_stu where sex = ‘男’;所有女生中年龄最小的多大SELECT MIN(age) from s_stu where sex = ‘女’;所有女生中年龄最大的多大SELECT max(age) from s_stu WHERE sex = ‘女’男生的">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-16T12:22:23.955Z">
+<meta property="og:updated_time" content="2019-10-19T13:44:30.398Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SELECT">
-<meta name="twitter:description" content="查询所有人的所有信息SELECT id,stuno,name,nation from stuinfo;SELECT * from stuinfo;查询年龄大于1000的同学姓名和年龄；SELECT name 姓名,age 年龄,nation 民族 from stuinfo where age &amp;gt; 1000;查询年龄大于1000的同学姓名，并且把重复信息合并SELECT DISTINCT na">
+<meta name="twitter:title" content="SELETE">
+<meta name="twitter:description" content="所有同学的年龄总和SELECT SUM(age) from s_stu;所有男生的平均年龄SELECT AVG(age) from s_stu where sex = ‘男’;所有女生中年龄最小的多大SELECT MIN(age) from s_stu where sex = ‘女’;所有女生中年龄最大的多大SELECT max(age) from s_stu WHERE sex = ‘女’男生的">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,27 +154,27 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-SELECT" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-SELETE" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      SELECT
+      SELETE
     </h1>
   
 
         
-        <a href="/2019/10/16/SELECT/" class="archive-article-date">
-  	<time datetime="2019-10-16T12:21:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-16</time>
+        <a href="/2019/10/19/SELETE/" class="archive-article-date">
+  	<time datetime="2019-10-19T13:44:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-19</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>查询所有人的所有信息<br>SELECT id,stuno,name,nation from stuinfo;<br>SELECT * from stuinfo;<br>查询年龄大于1000的同学姓名和年龄；<br>SELECT name 姓名,age 年龄,nation 民族 from stuinfo where age &gt; 1000;<br>查询年龄大于1000的同学姓名，并且把重复信息合并<br>SELECT DISTINCT name 姓名 from stuinfo where age &gt; 1000;<br>查询所有人的学号和姓名,只显示第50页的数据，每页5条<br>SELECT stuno,name from stuinfo LIMIT 0,5;<br>查询所有学员信息，按照年龄升序排序<br>SELECT * from stuinfo order by age asc;<br>查询名字是两个字，按照年龄降序排列<br>SELECT * from stuinfo WHERE name LIKE ‘__’ order by age DESC;<br>按照民族进行排序<br>SELECT * from stuinfo order by nation DESC;</p>
+        <p>所有同学的年龄总和<br>SELECT SUM(age) from s_stu;<br>所有男生的平均年龄<br>SELECT AVG(age) from s_stu where sex = ‘男’;<br>所有女生中年龄最小的多大<br>SELECT MIN(age) from s_stu where sex = ‘女’;<br>所有女生中年龄最大的多大<br>SELECT max(age) from s_stu WHERE sex = ‘女’<br>男生的数量<br>SELECT count(1) from s_stu WHERE sex = ‘男’;<br>查询男生和女生的总数<br>SELECT count(*),sex FROM s_stu group by sex;<br>查询每个年龄段的人数<br>SELECT count(1),age from s_stu group by age;<br>查询男生和女生中最小的年龄<br>SELECT min(age) from s_stu group by sex;<br>查询男生和女生的年龄大于15的人数，只保留人数大于3的；<br>SELECT<br>    count(1),<br>    sex<br>FROM<br>    s_stu<br>WHERE<br>    age &gt; 15<br>GROUP BY<br>    sex<br>HAVING<br>    count(1) &gt;= 3;</p>
 
       
 
@@ -254,7 +254,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/16/SELECT/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/19/SELETE/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -268,18 +268,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/10/19/SELETE/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          SELETE
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/10/15/数据库SQL/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">数据库SQL</div>
+    <a href="/2019/10/16/SELECT/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">SELECT</div>
       <i class="icon-circle-right"></i>
     </a>
   
